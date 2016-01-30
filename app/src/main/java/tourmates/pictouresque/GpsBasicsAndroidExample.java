@@ -1,9 +1,9 @@
 package tourmates.pictouresque;
+
 import android.os.Bundle;
 import android.app.Activity;
 
-/***********  Create class and implements with LocationListener **************/
-    public class GpsBasicsAndroidExample extends Activity implements LocationListener {
+public class GpsBasicsAndroidExample extends Activity implements LocationListener {
 
         private LocationManager locationManager;
 
@@ -41,8 +41,7 @@ import android.app.Activity;
         @Override
         public void onLocationChanged(Location location) {
 
-            String str = "Latitude: "+location.getLatitude()+"
-            Longitude: "+location.getLongitude();
+            String str = "Latitude: "+location.getLatitude()+" Longitude: "+location.getLongitude();
 
             Toast.makeText(getBaseContext(), str, Toast.LENGTH_LONG).show();
         }
@@ -68,5 +67,5 @@ import android.app.Activity;
             // TODO Auto-generated method stub
 
         }
-    }
+}
 
