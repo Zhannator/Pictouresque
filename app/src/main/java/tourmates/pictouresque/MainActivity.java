@@ -177,7 +177,7 @@ public class MainActivity extends Activity {
             @Override
                 public void onClick(View v){
                     //take the picture
-                   goToActivity2();
+                   goToActivity3();
                 }
             });
     }
@@ -194,8 +194,8 @@ public class MainActivity extends Activity {
         }
     }
 
-    private void goToActivity2() {
-        Intent intent = new Intent(this, Activity2.class);
+    private void goToActivity3() {
+        Intent intent = new Intent(this, Activity3.class);
         startActivity(intent);
     }
 }
