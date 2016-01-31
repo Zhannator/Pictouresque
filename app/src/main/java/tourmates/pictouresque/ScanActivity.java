@@ -57,7 +57,7 @@ public class ScanActivity extends Activity implements AutoScannerSession.Listene
         builder.setMessage(result.getValue());
         builder.show();
 
-        goToActivity2();
+        goToActivity3();
     }
 
     @Override
@@ -72,8 +72,8 @@ public class ScanActivity extends Activity implements AutoScannerSession.Listene
         session.stop();
     }
 
-    private void goToActivity2() {
-        Intent intent = new Intent(this, Activity2.class);
+    private void goToActivity3() {
+        Intent intent = new Intent(this, Activity3.class);
         startActivity(intent);
     }
 }
